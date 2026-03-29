@@ -39,13 +39,13 @@ export default function Home() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full mb-8 animate-fade-in">
               <span className="w-2 h-2 bg-cyan rounded-full animate-pulse" />
-              <span className="text-xs font-bold tracking-widest uppercase text-white/70">Premier Influencer Agency</span>
+              <span className="text-xs font-bold tracking-widest uppercase text-white/70">RSAGENCY</span>
             </div>
             <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.9]">
               Connect Brands with <span className="text-gradient">Top Influencers</span>
             </h1>
             <p className="text-xl text-white/60 mb-12 max-w-xl leading-relaxed">
-              Influencio bridges the gap between visionary brands and world-class creators. We craft authentic narratives that resonate and drive measurable growth.
+              RSAGENCY bridges the gap between visionary brands and world-class creators. We craft authentic narratives that resonate and drive measurable growth.
             </p>
             <div className="flex flex-col sm:row items-center gap-6">
               <Link
@@ -117,7 +117,7 @@ export default function Home() {
             Ready to Amplify Your Brand?
           </h2>
           <p className="text-xl text-white/60 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Join the ranks of leading brands and elite creators who trust Influencio to power their influencer marketing success.
+            Join the ranks of leading brands and elite creators who trust RSAGENCY to power their influencer marketing success.
           </p>
           <div className="flex flex-col sm:row items-center justify-center gap-6">
             <Link

@@ -15,8 +15,49 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Influencio | Premier Influencer Marketing Agency",
-  description: "Connect world-class brands with influential voices. We craft authentic narratives that drive real results.",
+  title: "RSAGENCY - Premier Influencer Marketing Agency",
+  description: "Connect brands with top influencers. Expert campaign management, talent booking, and data-driven strategies for authentic marketing success.",
+  keywords: ["influencer marketing", "brand partnerships", "social media campaigns", "influencer agency", "talent booking", "campaign management", "ROI optimization"],
+  authors: [{ name: "RSAGENCY" }],
+  creator: "RSAGENCY",
+  publisher: "RSAGENCY",
+  openGraph: {
+    title: "RSAGENCY - Premier Influencer Marketing Agency",
+    description: "Connect brands with top influencers. Expert campaign management, talent booking, and data-driven strategies for authentic marketing success.",
+    url: "https://rsagency.vercel.app",
+    siteName: "RSAGENCY",
+    images: [
+      {
+        url: "https://rsagency.vercel.app/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "RSAGENCY - Influencer Marketing Agency",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "RSAGENCY - Premier Influencer Marketing Agency",
+    description: "Connect brands with top influencers. Expert campaign management, talent booking, and data-driven strategies for authentic marketing success.",
+    images: ["https://rsagency.vercel.app/og-image.jpg"],
+    creator: "@rsagency",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "your-google-site-verification-code",
+  },
 };
 
 export default function RootLayout({
