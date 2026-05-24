@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-neon-cyan: #22d3ee;
+  --color-neon-purple: #a855f7;
+  --color-neon-pink: #ec4899;
+  --color-dark-obsidian: #050505;
+  --color-card-dark: rgba(255, 255, 255, 0.05);
+  --color-border-glow: rgba(255, 255, 255, 0.1);
+
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-delayed: float-delayed 8s ease-in-out infinite;
+  --animate-glow-pulse: glow-pulse 3s infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+}
+
+@keyframes float-delayed {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(15px) rotate(-2deg);
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.2), 0 0 30px rgba(168, 85, 247, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(6, 182, 212, 0.4), 0 0 50px rgba(168, 85, 247, 0.3);
+  }
+}
+
+/* Custom Glassmorphism Classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-panel-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(34, 211, 238, 0.4);
+  box-shadow: 0 10px 30px -10px rgba(34, 211, 238, 0.15),
+              0 0 25px -5px rgba(168, 85, 247, 0.15);
+}
+
+/* Glowing text and buttons */
+.text-neon-cyan {
+  text-shadow: 0 0 12px rgba(34, 211, 238, 0.6);
+}
+
+.text-neon-purple {
+  text-shadow: 0 0 12px rgba(168, 85, 247, 0.6);
+}
+
+.btn-neon-purple {
+  background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-neon-purple:hover {
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.5), 0 0 40px rgba(236, 72, 153, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-neon-cyan {
+  background: #22d3ee;
+  color: #000000;
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-neon-cyan:hover {
+  box-shadow: 0 0 25px rgba(34, 211, 238, 0.6);
+  transform: translateY(-2px);
+  background: #06b6d4;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(34, 211, 238, 0.5);
+}
+
+/* Remove default tap highlights on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #050505;
+  color: #f4f4f5;
+  overflow-x: hidden;
+}
