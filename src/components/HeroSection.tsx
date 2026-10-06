@@ -275,13 +275,24 @@ export default function HeroSection() {
                         </div>
                       </div>
 
-                      <button
-                        onClick={() => handleScrollTo('ruxova-showcase')}
-                        className="mt-2 w-full py-2 rounded-xl bg-amber-500/10 border border-amber-500/30 hover:bg-amber-500/20 text-xs font-mono text-amber-300 flex items-center justify-center gap-1.5 transition-all cursor-pointer"
-                      >
-                        <ShoppingBag className="w-3.5 h-3.5" />
-                        Try Interactive Fragrance Selector
-                      </button>
+                      <div className="mt-2 flex gap-2">
+                        <button
+                          onClick={() => handleScrollTo('ruxova-showcase')}
+                          className="flex-1 py-2 rounded-xl bg-amber-500/10 border border-amber-500/30 hover:bg-amber-500/20 text-[11px] font-mono text-amber-300 flex items-center justify-center gap-1.5 transition-all cursor-pointer"
+                        >
+                          <ShoppingBag className="w-3.5 h-3.5" />
+                          Interactive Showcase
+                        </button>
+                        <a
+                          href="https://ruxova.vercel.app/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="py-2 px-3 rounded-xl bg-amber-500 text-black font-extrabold text-[11px] font-mono hover:bg-amber-400 flex items-center justify-center gap-1 transition-all cursor-pointer"
+                        >
+                          <ExternalLink className="w-3.5 h-3.5 text-black" />
+                          Live Site
+                        </a>
+                      </div>
                     </div>
                   </motion.div>
                 )}

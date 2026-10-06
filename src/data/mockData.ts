@@ -58,7 +58,7 @@ export const PROJECTS: Project[] = [
     longDescription: 'Ruxova Perfumes required a state-of-the-art web presence that felt as premium as high-end European fragrance houses. Engineered with micro-animations, fast asset rendering, and a custom fragrance notes selector to boost customer conversion.',
     image: ruxovaImg,
     tags: ['E-Commerce', 'React', 'JavaScript', 'Tailwind CSS', 'Framer Motion', 'REST API'],
-    liveUrl: 'https://rsagency.vercel.app',
+    liveUrl: 'https://ruxova.vercel.app/',
     githubUrl: 'https://github.com/7091rahulA20/RSAGENCY',
     featured: true,
     metrics: [

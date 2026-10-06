@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Sparkles, ShoppingBag, Check, Star, Shield, ArrowRight, Heart, Award, RefreshCw } from 'lucide-react';
+import { Sparkles, ShoppingBag, Check, Star, Shield, ArrowRight, Heart, Award, RefreshCw, ExternalLink } from 'lucide-react';
 import ruxovaImg from '../assets/ruxova.jpg';
 
 export default function RuxovaShowcase() {
@@ -211,8 +211,8 @@ export default function RuxovaShowcase() {
               </div>
             </div>
 
-            {/* Interactive Add to Cart CTA */}
-            <div className="flex gap-3">
+            {/* Interactive Add to Cart & Live Site CTAs */}
+            <div className="flex flex-col sm:flex-row gap-3">
               <button
                 onClick={handleAddToCart}
                 disabled={addedToCart}
@@ -226,10 +226,20 @@ export default function RuxovaShowcase() {
                 ) : (
                   <>
                     <ShoppingBag className="w-4 h-4" />
-                    Simulate Add to Cart ({selectedSize})
+                    Simulate Cart ({selectedSize})
                   </>
                 )}
               </button>
+
+              <a
+                href="https://ruxova.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="py-4 px-6 rounded-2xl border border-amber-500/40 bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 font-extrabold text-xs uppercase tracking-widest flex items-center justify-center gap-2 transition-all cursor-pointer"
+              >
+                <ExternalLink className="w-4 h-4" />
+                Visit Live Site
+              </a>
             </div>
 
             <p className="mt-4 text-[10px] font-mono text-zinc-500 text-center">
