@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { MessageCircle, Send, ArrowUp, Instagram } from 'lucide-react';
+import { MessageCircle, ArrowUp, Instagram } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 export default function FloatingButtons() {
@@ -41,26 +41,25 @@ export default function FloatingButtons() {
         </motion.button>
       )}
 
-     {/* Instagram Button */}
-<motion.a
-  href="https://instagram.com/rs.agency.in"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex h-13 w-13 items-center justify-center rounded-full bg-pink-600 text-white shadow-[0_0_15px_rgba(236,72,153,0.5)] hover:shadow-[0_0_25px_rgba(236,72,153,0.8)] transition-all cursor-pointer relative group"
-  whileHover={{ scale: 1.1, y: -2 }}
-  whileTap={{ scale: 0.95 }}
-  id="floating-instagram"
->
-  <span className="absolute right-15 scale-0 group-hover:scale-100 transition-all origin-right bg-pink-950/90 text-pink-200 border border-pink-500/30 px-3 py-1 rounded-md text-xs font-mono whitespace-nowrap backdrop-blur-md">
-    Chat on Instagram
-  </span>
-
-  <Instagram className="h-6 w-6" />
-</motion.a>
+      {/* Instagram Button */}
+      <motion.a
+        href="https://instagram.com/rs.agency.in"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex h-13 w-13 items-center justify-center rounded-full bg-pink-600 text-white shadow-[0_0_15px_rgba(236,72,153,0.5)] hover:shadow-[0_0_25px_rgba(236,72,153,0.8)] transition-all cursor-pointer relative group"
+        whileHover={{ scale: 1.1, y: -2 }}
+        whileTap={{ scale: 0.95 }}
+        id="floating-instagram"
+      >
+        <span className="absolute right-15 scale-0 group-hover:scale-100 transition-all origin-right bg-pink-950/90 text-pink-200 border border-pink-500/30 px-3 py-1 rounded-md text-xs font-mono whitespace-nowrap backdrop-blur-md">
+          Chat on Instagram
+        </span>
+        <Instagram className="h-6 w-6" />
+      </motion.a>
 
       {/* WhatsApp Button */}
       <motion.a
-        href="https://wa.me/917808763348"
+        href="https://wa.me/917091830749?text=Hi%20Rahul,%20I'm%20interested%20in%20your%20services!"
         target="_blank"
         rel="noopener noreferrer"
         className="flex h-13 w-13 items-center justify-center rounded-full bg-emerald-500 text-white shadow-[0_0_15px_rgba(16,185,129,0.5)] hover:shadow-[0_0_25px_rgba(16,185,129,0.8)] transition-all cursor-pointer relative group"
@@ -69,7 +68,7 @@ export default function FloatingButtons() {
         id="floating-whatsapp"
       >
         <span className="absolute right-15 scale-0 group-hover:scale-100 transition-all origin-right bg-emerald-950/90 text-emerald-200 border border-emerald-500/30 px-3 py-1 rounded-md text-xs font-mono whitespace-nowrap backdrop-blur-md">
-          Chat on WhatsApp
+          Chat on WhatsApp (+91 7091830749)
         </span>
         <MessageCircle className="h-6 w-6 fill-current" />
       </motion.a>

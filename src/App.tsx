@@ -3,10 +3,12 @@ import Loader from './components/Loader';
 import CursorGlow from './components/CursorGlow';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
-import AboutSection from './components/AboutSection';
+import FounderBioSection from './components/FounderBioSection';
+import ProjectsSection from './components/ProjectsSection';
+import RuxovaShowcase from './components/RuxovaShowcase';
+import SkillsSection from './components/SkillsSection';
+import EducationSection from './components/EducationSection';
 import ServicesSection from './components/ServicesSection';
-
-import InstagramFeed from './components/InstagramFeed';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import FloatingButtons from './components/FloatingButtons';
@@ -23,40 +25,39 @@ export default function App() {
           {/* Mouse tracking spotlight effect */}
           <CursorGlow />
 
-          {/* Symmetrical Header Sticky Navigation */}
+          {/* Sticky Navigation */}
           <Navbar />
 
           <main>
-            {/* 1. Hero Stage - Visual Center */}
+            {/* 1. Hero Stage - Dual Identity Showcase */}
             <HeroSection />
 
-            {/* 2. Core agency value metrics */}
-            <AboutSection />
+            {/* 2. Founder Story & Philosophy */}
+            <FounderBioSection />
 
-            {/* 3. Sliding Tab Services offerings */}
+            {/* 3. Featured Engineering Case Studies (RS Agency Platform, Ruxova Perfumes, etc.) */}
+            <ProjectsSection />
+
+            {/* 4. Special Interactive Ruxova Perfumes Luxury E-Commerce Simulator */}
+            <RuxovaShowcase />
+
+            {/* 5. Full Stack Developer Tech Capabilities */}
+            <SkillsSection />
+
+            {/* 6. Academic Qualifications & BCA Semesters Record */}
+            <EducationSection />
+
+            {/* 7. Web Dev & Agency Services */}
             <ServicesSection />
 
-            {/* 4. Modular Bento-Feature list highlights */}
-          
-            
-
-           
-            
-
-            
-            
-
-            {/* 8. Instagram interactive post grid */}
-            
-
-            {/* 9. Segmented Brand/Creator budget intake form */}
+            {/* 8. 3-Tab Contact Intake Form */}
             <ContactForm />
           </main>
 
-          {/* 10. Social footer and copyrights */}
+          {/* Footer & Copyright */}
           <Footer />
 
-          {/* Floating instant contact anchors (WhatsApp, Telegram) */}
+          {/* Floating instant contact anchors */}
           <FloatingButtons />
         </div>
       )}

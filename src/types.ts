@@ -1,10 +1,47 @@
+export interface Project {
+  id: string;
+  title: string;
+  subtitle: string;
+  category: 'platform' | 'ecommerce' | 'directory' | 'dashboard' | 'fullstack';
+  description: string;
+  longDescription: string;
+  image: string;
+  tags: string[];
+  liveUrl?: string;
+  githubUrl?: string;
+  featured: boolean;
+  metrics: { label: string; value: string }[];
+  highlights: string[];
+  techStack: string[];
+}
+
+export interface SkillCategory {
+  title: string;
+  skills: {
+    name: string;
+    level: string;
+    iconName: string;
+    experience: string;
+  }[];
+}
+
+export interface EducationDetail {
+  degree: string;
+  institution: string;
+  affiliation: string;
+  location: string;
+  cgpa: string;
+  semesters: { sem: string; sgpa: string }[];
+  highlights: { subject: string; grade: string; marks: string }[];
+}
+
 export interface Influencer {
   id: string;
   name: string;
   handle: string;
   category: 'lifestyle' | 'fashion' | 'tech' | 'gaming' | 'comedy' | 'business' | 'entertainment';
   followers: string;
-  followersCount: number; // For internal ordering if needed
+  followersCount: number;
   engagement: string;
   image: string;
   platforms: ('instagram' | 'tiktok' | 'youtube' | 'twitch')[];
@@ -15,7 +52,7 @@ export interface Influencer {
 export interface Service {
   id: string;
   title: string;
-  type: 'brand' | 'creator';
+  type: 'webdev' | 'brand' | 'creator';
   icon: string;
   description: string;
   listItems: string[];
@@ -26,7 +63,7 @@ export interface Testimonial {
   name: string;
   role: string;
   avatar: string;
-  type: 'brand' | 'creator';
+  type: 'client' | 'brand' | 'creator';
   content: string;
   rating: number;
   metric?: string;
